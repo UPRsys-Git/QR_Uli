@@ -59,7 +59,8 @@
     const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbwsssxgNyTrIcRxovSsToYh-G2_TVhBxyYTWafWN-wDs88g7Vbkj3Ky2y99HddrtrKWwg/exec";
     var url = document.location.hfref;
     var k = url.substr(url.lastIndexOF("k=")+2); // .../?k=mykey
-
+    console.log(este es el dato k)
+    console.log(k)
     if(k){
       fetch(AS_URL_BASE+'?k='+k)
       .then(r => r.text())
